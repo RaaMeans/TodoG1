@@ -1,0 +1,129 @@
+body {
+    font-family: "Lexend", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #78B3CE;
+    width: 400px;
+    max-height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    width: 70%;
+    height: 40px;
+    font-size: 13pt;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.add {
+    width: 60px;
+    height: 42px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add:hover {
+    background-color: #f96e2a;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #C9E6F0;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 13pt;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    min-height: 50px;
+}
+
+li span {
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-right: 80px;
+}
+
+.complete,
+.remove {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.complete {
+    background-color: #3DA35D;
+    right: 50px;
+}
+
+.remove {
+    background-color: #f96e2a;
+    right: 10px;
+}
+
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}
+
+li {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    min-height: 50px; /* Fixes consistent height */
+}
+
